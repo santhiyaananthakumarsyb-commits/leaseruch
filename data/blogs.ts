@@ -1,0 +1,81 @@
+// SAMPLE CONTENT. Replace titles, dates and body text with your real posts.
+export const blogPosts = [
+  {
+    slug: "role-of-nlp-in-lease-abstraction",
+    title: "The Role of Natural Language Processing (NLP) in Lease…",
+    category: "Lease Abstraction",
+    author: "Admin",
+    date: "October 8, 2024",
+    image: "/process-1.jpg",
+    body: [
+      "How NLP Helps Read Long Lease Documents",
+      "Natural Language Processing allows software to read lease text the way a person would, finding clauses, dates and amounts inside long documents.",
+      "Combined with expert review, it helps teams turn complex leases into clear, structured abstracts much faster.",
+    ],
+  },
+  {
+    slug: "how-ai-reads-and-extracts-key-lease-terms",
+    title: "How AI Reads and Extracts Key Lease Terms: A…",
+    category: "AI Lease Abstraction",
+    author: "Admin",
+    date: "October 7, 2024",
+    image: "/process-3.jpg",
+    body: [
+      "From Lease Document to Structured Data",
+      "AI scans each page, identifies key terms such as rent, term dates and renewal options, and places them into a template.",
+      "A human quality check then confirms every extracted value, so nothing is missed.",
+    ],
+  },
+  {
+    slug: "lease-abstraction-operational-effectiveness",
+    title: "How does lease abstraction enhance operational effectiveness in CRE…",
+    category: "Lease Abstraction",
+    author: "Admin",
+    date: "October 6, 2024",
+    image: "/process-2.jpg",
+    body: [
+      "Why Operations Teams Rely on Abstracts",
+      "A good lease abstract gives property teams quick access to critical dates and obligations without reading the full lease.",
+      "That saves time, reduces errors and helps teams act before important deadlines pass.",
+    ],
+  },
+  {
+    slug: "benefits-of-accurate-lease-abstraction",
+    title: "Benefits of Accurate Lease Abstraction",
+    category: "AI Lease Abstraction",
+    author: "Admin",
+    date: "October 5, 2024",
+    image: "/process-5.jpg",
+    body: [
+      "Why Accuracy Matters",
+      "Even a small mistake in a rent figure or a date can lead to costly misunderstandings later.",
+      "Accurate abstraction gives owners and managers data they can trust for reporting and decisions.",
+    ],
+  },
+  {
+    slug: "main-benefits-of-using-ai-for-lease-abstraction",
+    title: "Main Benefits of Using AI for Lease Abstraction",
+    category: "AI Lease Abstraction",
+    author: "Admin",
+    date: "October 4, 2024",
+    image: "/process-6.jpg",
+    body: [
+      "Speed, Cost and Consistency",
+      "AI processes leases in a fraction of the time manual review needs, which lowers turnaround time and cost.",
+      "It also applies the same rules to every document, giving consistent results across a whole portfolio.",
+    ],
+  },
+  {
+    slug: "future-of-commercial-lease-abstraction",
+    title: "The Future of Commercial Lease Abstraction",
+    category: "Commercial Lease Abstraction",
+    author: "Admin",
+    date: "October 3, 2024",
+    image: "/process-4.jpg",
+    body: [
+      "Where Lease Abstraction Is Heading",
+      "As AI improves, more of the routine reading work will be automated, with experts focusing on checking and insight.",
+      "Teams that combine AI speed with human oversight will be best placed to manage growing lease portfolios.",
+    ],
+  },
+];

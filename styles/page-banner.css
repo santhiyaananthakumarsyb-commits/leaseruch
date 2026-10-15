@@ -1,0 +1,52 @@
+.page-banner {
+  position: relative;
+  display: flex;
+  min-height: 260px;
+  align-items: center;
+  overflow: hidden;
+  background-color: #00145b;
+  background-image: url("/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.page-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 20, 91, 0.94) 0%,
+    rgba(0, 20, 91, 0.75) 60%,
+    rgba(0, 20, 91, 0.4) 100%
+  );
+}
+
+.page-banner-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.page-banner-title {
+  margin: 0 0 12px;
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+}
+
+.page-banner-crumbs {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.page-banner-crumbs a {
+  text-decoration: none;
+  color: #f4512b;
+}
+
+.page-banner-crumbs span {
+  margin: 0 6px;
+}

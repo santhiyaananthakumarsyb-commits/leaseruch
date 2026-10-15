@@ -1,0 +1,24 @@
+.brand-banner {
+  width: 100%;
+  padding: 50px 24px;
+  background: #ffffff;
+}
+
+.brand-banner-card {
+  max-width: 1250px;
+  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18);
+}
+
+.brand-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .brand-banner {
+    padding: 30px 16px;
+  }
+}

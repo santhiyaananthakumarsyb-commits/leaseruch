@@ -1,0 +1,162 @@
+.process-section {
+  width: 100%;
+  padding: 60px 24px 80px;
+  background: #eff0f6;
+}
+
+.process-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-heading {
+  margin: 0 0 56px;
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #f4512b;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+.process-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== Circle ===== */
+.process-circle {
+  position: relative;
+  width: 100%;
+  max-width: 208px;
+  aspect-ratio: 1;
+  border: 1px solid #d3d6e6;
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.process-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #00145b;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Connector line + orange arrows between circles */
+.process-item:not(:last-child) .process-circle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 24px;
+  height: 1px;
+  background: #d3d6e6;
+}
+
+.process-item:not(:last-child) .process-circle::after {
+  content: "»";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 24px;
+  transform: translateY(-52%);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f4512b;
+  background: #eff0f6;
+}
+
+/* ===== White circle with blue arrow ===== */
+.process-icon {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  display: flex;
+  width: 27%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.process-icon span {
+  display: flex;
+  width: 82%;
+  aspect-ratio: 1;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #9ec8ff;
+  font-size: clamp(13px, 1.6vw, 22px);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ===== Orange slanted "Step 01" label ===== */
+.process-badge {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  z-index: 2;
+  padding: 6px 26px;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.process-badge::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #f4512b;
+  transform: skewX(-12deg);
+}
+
+/* ===== Title ===== */
+.process-title {
+  margin: 36px 0 0;
+  font-size: clamp(1.05rem, 1.6vw, 1.4rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0b1a6b;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1100px) {
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 48px;
+  }
+
+  .process-item .process-circle::before,
+  .process-item .process-circle::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+  }
+
+  .process-badge {
+    padding: 4px 16px;
+    font-size: 14px;
+  }
+}

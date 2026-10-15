@@ -1,0 +1,156 @@
+.ap-label {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #f4512b;
+}
+
+.ap-title {
+  margin: 0 0 24px;
+  font-size: clamp(1.8rem, 3.2vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: #00145b;
+}
+
+.ap-center {
+  text-align: center;
+}
+
+/* ===== Intro ===== */
+.ap-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 24px;
+}
+
+.ap-intro-image {
+  position: relative;
+  min-height: 420px;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 12px 30px rgba(0, 20, 91, 0.18);
+}
+
+.ap-intro-image img {
+  object-fit: cover;
+}
+
+.ap-intro-text p:not(.ap-label) {
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #4a4f63;
+}
+
+/* ===== Stats ===== */
+.ap-stats {
+  background: #12112b;
+  color: #ffffff;
+}
+
+.ap-stats-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 24px;
+  text-align: center;
+}
+
+.ap-stat-value {
+  margin: 0 0 6px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: #f4512b;
+}
+
+.ap-stat-label {
+  margin: 0;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== Why choose us ===== */
+.ap-why {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 24px;
+  text-align: center;
+}
+
+.ap-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin: 40px 0 48px;
+}
+
+.ap-why-card {
+  padding: 36px 28px;
+  border-bottom: 4px solid #f4512b;
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 20, 91, 0.1);
+  text-align: left;
+}
+
+.ap-why-card h3 {
+  margin: 0 0 10px;
+  font-size: 21px;
+  font-weight: 700;
+  color: #00145b;
+}
+
+.ap-why-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #4a4f63;
+}
+
+.ap-button {
+  display: inline-block;
+  padding: 16px 36px;
+  background: #f4512b;
+  font-weight: 700;
+  text-decoration: none;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.ap-button:hover {
+  background: #d63f1c;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .ap-intro {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 56px 20px;
+  }
+
+  .ap-intro-image {
+    min-height: 300px;
+  }
+
+  .ap-stats-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 44px 20px;
+  }
+
+  .ap-why {
+    padding: 56px 20px;
+  }
+
+  .ap-why-grid {
+    grid-template-columns: 1fr;
+  }
+}

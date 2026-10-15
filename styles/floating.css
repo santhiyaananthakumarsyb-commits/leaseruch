@@ -1,0 +1,192 @@
+
+/* ===== Floating contact widget ===== */
+
+.floating-contact {
+  position: fixed;
+  right: 24px;
+  bottom: 16px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  font-family: Arial, sans-serif;
+}
+
+.floating-contact-card {
+  width: 230px;
+  padding: 8px;
+  border-radius: 23px;
+  background: #ffffff;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.16);
+}
+
+.floating-contact-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 7px 7px;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.floating-contact-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.floating-call {
+  display: flex;
+  width: 100%;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 22px;
+  background: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.floating-call:hover {
+  background: #292929;
+}
+
+.schedule-meeting {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 24px;
+  background: #079df0;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 157, 240, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.schedule-meeting:hover {
+  background: #0788d0;
+}
+
+.floating-call:focus-visible,
+.schedule-meeting:focus-visible {
+  outline: 3px solid #5555ff;
+  outline-offset: 3px;
+}
+
+/* ===== Cookie banner ===== */
+
+.cookie-banner {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 60;
+  display: flex;
+  max-width: 560px;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 22px;
+  border-radius: 6px;
+  background: #00145b;
+  box-shadow: 0 12px 40px rgba(0, 20, 91, 0.35);
+  color: #ffffff;
+}
+
+.cookie-banner p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.cookie-banner a {
+  font-weight: 700;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.cookie-actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 10px;
+}
+
+.cookie-actions button {
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cookie-accept {
+  border: 0;
+  background: #f4512b;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.cookie-accept:hover {
+  background: #d63f1c;
+}
+
+.cookie-decline {
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+}
+
+.cookie-decline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.cookie-actions button:focus-visible,
+.cookie-banner a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 700px) {
+  .floating-contact {
+    right: 12px;
+    bottom: 12px;
+    gap: 10px;
+  }
+
+  .floating-contact-card {
+    width: 220px;
+  }
+
+  .schedule-meeting {
+    min-height: 40px;
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  .cookie-banner {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    max-width: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .cookie-actions button {
+    flex: 1;
+  }
+}
